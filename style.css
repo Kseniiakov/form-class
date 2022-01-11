@@ -5,3 +5,14 @@
 .inl-bk {
   display: inline-block;
 }
+
+form {
+  text-align: center;
+  width: 70%;
+  margin: auto;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+}

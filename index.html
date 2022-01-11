@@ -1,15 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <header></header>
-  <main></main>
-  <footer></footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form-class</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <form action="">
+        <fieldset>
+          <legend>Personal Details</legend>
+          <label
+            >Name:
+            <input type="text" name="name" />
+          </label>
+          <label
+            >Password:
+            <input type="password" name="password" />
+          </label>
+          <label
+            >E-mail id:
+            <input type="email" name="email" />
+          </label>
+          <label
+            >Gender: <input type="radio" name="gender" value="male" /> Male
+            <input type="radio" name="gender" value="female" /> Female
+          </label>
+          <label
+            >Contact#:
+            <input type="text" name="contact" />
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Education Qualification</legend>
+
+          <label for="input-degree"
+            >Degree:
+            <input type="text" list="degree" id="input-degree" />
+            <datalist id="degree">
+              <option>-- Select Group</option>
+              <option>First Group</option>
+              <option>Second Group</option>
+            </datalist>
+          </label>
+          <label>Attch Resume:
+            <input type="file" name="file">
+          </label>
+        </fieldset>
+        <fieldset>
+          <textarea name="text" id="" cols="30" rows="10"></textarea>
+        </fieldset>
+      </form>
+    </main>
+  </body>
 </html>
